@@ -43,7 +43,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-black"> {/* Changed the background color to black */}
+    <div className="dark:bg-black bg-white"> {/* Changed the background color to black in dark mode and white in light mode */}
       {/* Your existing JSX code for background image */}
       {/* Search */}
       <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 px-4 text-white z-10'>
@@ -54,7 +54,7 @@ const Home = () => {
           <div>
             <input
               onChange={(e) => setCity(e.target.value)}
-              className='bg-transparent border-none text-white focus:outline-none text-2xl'
+              className='bg-transparent border-none text-white focus:outline-none text-2xl white:text-black' // Changed text color to black in dark mode
               type='text'
               placeholder='Search city'
             />
