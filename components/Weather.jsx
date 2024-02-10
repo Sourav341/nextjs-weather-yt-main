@@ -59,7 +59,7 @@ const Weather = ({ data }) => {
       };
       fetchPastWeatherData();
     }
-  }, [weatherData]);
+  }, [recentSearches, weatherData]);
 
   return (
     <div className='relative flex flex-col justify-between max-w-[500px] w-full h-[90vh] m-auto p-4 text-gray-300 z-10'>
